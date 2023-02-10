@@ -299,6 +299,10 @@ header
   box-shadow: 0px 5px 8px rgba(0,0,0,0.03);
 }
 
+.logo-img {
+  width: 150px;
+}
+
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #fff;
@@ -390,25 +394,25 @@ header
   padding-right: 20px;
 }
 
-.header-area .main-nav .nav li:nth-child(6) {
+/* .header-area .main-nav .nav li:nth-child(6) {
   padding-right: 0px;
   padding-left: 40px;
-}
+} */
 
-.header-area .main-nav .nav li:last-child a ,
+/* .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a,
 .header-area .main-nav .nav li:nth-child(6) a ,
 .background-header .main-nav .nav li:nth-child(6) a {
   padding: 0px 20px !important;
   font-weight: 400;
-}
+} */
 
-.header-area .main-nav .nav li:last-child a:hover ,
+/* .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover ,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
   color: #fff !important;
-}
+} */
 
 .header-area .main-nav .nav li a {
   display: block;
@@ -922,7 +926,14 @@ Banner Style
   font-weight: 700;
   line-height: 70px;
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.main-banner .left-content h4 {
+  color: #0d6efd;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .main-banner .left-content p {
@@ -956,39 +967,27 @@ Banner Style
 
 /* 
 ---------------------------------------------
-Services Style
+Technologies
 --------------------------------------------- 
 */
 
-.services {
+.technologies {
   padding-top: 130px;
   position: relative;
 }
 
-.services  .section-heading p {
+.technologies  .section-heading p {
   margin-top: 10px;
   margin-left: 18%;
   margin-right: 18%;
 }
 
-.services .container-fluid {
+.tehchnologies .container-fluid {
   padding-left: 65px;
   padding-right: 65px;
 }
 
-.services:after {
-  content: '';
-  background-image: url(../images/services-left-dec.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  bottom: -300px;
-  width: 261px;
-  height: 368px;
-  z-index: 0;
-}
-
-.services:before {
+.technologies:before {
   content: '';
   background-image: url(../images/services-right-dec.png);
   background-repeat: no-repeat;
@@ -997,19 +996,19 @@ Services Style
   top: 0;
   width: 1136px;
   height: 244px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
-.services .section-heading {
+.technologies .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
-.services .section-heading .line-dec {
+.technologies .section-heading .line-dec {
   margin: 0 auto;
 }
 
-.service-item {
+.technology-item {
   position: relative;
   z-index: 1;
   padding: 30px;
@@ -1018,74 +1017,45 @@ Services Style
   border-radius: 10px;
   border-top-right-radius: 50px;
   transition: all .3s;
+  min-height: 500px;
 }
 
-.service-item .icon {
-  margin-left: 0px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  transition: all .3s;
-}
-
-.service-item h4 {
+.technology-item h4 {
   transition: all .3s;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.service-item p {
+.technology-item p {
   transition: all .3s;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.service-item:hover h4,
-.service-item:hover p,
-.service-item:hover .text-button a {
+/* .technology-item .text-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.technology-item:hover h4,
+.technology-item:hover p,
+.technology-item:hover .text-button a {
   color: #fff;
 }
 
-.first-service .icon {
-  background-image: url(../images/service-icon-01.png);
-}
-
-.first-service:hover .icon {
-  background-image: url(../images/service-icon-hover-01.png);
-}
-
-.second-service .icon {
-  background-image: url(../images/service-icon-02.png);
-}
-
-.second-service:hover .icon {
-  background-image: url(../images/service-icon-hover-02.png);
-}
-
-
-.third-service .icon {
-  background-image: url(../images/service-icon-03.png);
-}
-
-.third-service:hover .icon {
-  background-image: url(../images/service-icon-hover-03.png);
-}
-
-.fourth-service .icon {
-  background-image: url(../images/service-icon-04.png);
-}
-
-.fourth-service:hover .icon {
-  background-image: url(../images/service-icon-hover-04.png);
-}
-
-.service-item:hover {
+.technology-item:hover {
   background-image: url(../images/service-bg.jpg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.technology-item .icon {
+  height: 75px;
+  width: auto;
+  margin-bottom: 30px;
 }
 
 
@@ -1122,51 +1092,10 @@ About Us
   margin-bottom: 30px;
 }
 
-.about-us .box-item h4 a {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 8px;
-  color: #2a2a2a;
-  transition: all .3s;
-}
-
-.about-us .box-item p {
-  margin-bottom: 0px;
-}
-
-.about-us .box-item:hover h4 a {
-  color: #4b8ef1;
-}
-
 .about-us .gradient-button {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
-.about-us span {
-  font-size: 14px;
-  color: #7a7a7a;
-}
-
-.about-us .right-image {
-  position: relative;
-  z-index: 1;
-}
-
-.about-us:after {
-  background-image: url(../images/about-bg.jpg);
-  width: 777px;
-  height: 1132px;
-  content: '';
-  position: absolute;
-  background-repeat: no-repeat;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-}
-
-
 
 /* 
 ---------------------------------------------
@@ -2033,8 +1962,8 @@ responsive
     text-align: center;
     margin-bottom: 30px;
   }
-  .about-us .box-item {
-    text-align: center;
+  .box-item {
+text-align: center;
   }
   .about-us:after {
     display: none;
